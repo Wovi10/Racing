@@ -1,11 +1,9 @@
-using System;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Racing.DTO;
 using Racing.DTO.UpdateDTO;
 
 namespace Racing.UI.Pages.Pilot

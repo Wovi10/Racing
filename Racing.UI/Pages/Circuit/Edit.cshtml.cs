@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -8,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
-using Racing.DTO;
 using Racing.DTO.ReadDTO;
 using Racing.DTO.UpdateDTO;
 using JsonSerializer = System.Text.Json.JsonSerializer;

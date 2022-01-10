@@ -1,16 +1,10 @@
-using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Newtonsoft.Json;
-using Racing.DTO.ReadDTO;
 using Racing.DTO.UpdateDTO;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Racing.UI.Pages.Series
 {

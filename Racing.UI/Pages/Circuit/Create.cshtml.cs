@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -8,14 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using Racing.DAL.Repositories;
-using Racing.DTO;
 using Racing.DTO.CreateDTO;
 using Racing.DTO.ReadDTO;
-using Racing.DTO.UpdateDTO;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace Racing.UI.Pages.Circuit

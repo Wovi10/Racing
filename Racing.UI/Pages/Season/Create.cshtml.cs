@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
-using Racing.DAL.Repositories;
 using Racing.DTO.CreateDTO;
 using Racing.DTO.ReadDTO;
 using JsonSerializer = System.Text.Json.JsonSerializer;
