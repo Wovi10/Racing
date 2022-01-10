@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yGd6jpGfAp9fsIoxQHu+tqUhdvxvXWVQhQrdtIm6y+estvt97vQ8wJL403olC0I9MIYWvUeXq+AJkLKDiZyJcg==",
+  "dgSpecHash": "uGPv8cE4q32+WvFDo9e5eeVsgTYwjak07yeeQVBNWuC7r/Vet9+8fv21wV3Eop2yPheQAX+GYG1UI0jAs8c0Og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\woutv\\OneDrive - AP Hogeschool Antwerpen\\Bureaublad\\School\\3TI\\ProgrammerenDotNET\\Project\\Racing\\Racing\\Racing.API.csproj",
+  "projectFilePath": "D:\\Github\\Racing\\Racing\\Racing.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\woutv\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\woutv\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

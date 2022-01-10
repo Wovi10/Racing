@@ -1,8 +1,6 @@
 ﻿using System.Threading.Tasks;
-using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Racing.BLL.Services.Interface;
-using Racing.DAL.Models;
 using Racing.DTO.CreateDTO;
 using Racing.DTO.UpdateDTO;
 

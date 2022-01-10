@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Racing.BLL.Services.Interface;
-using Racing.DAL.Models;
-using Racing.DAL.Repositories;
-using Racing.DAL.Repositories.Interface;
-using Racing.DTO;
 using Racing.DTO.CreateDTO;
 using Racing.DTO.UpdateDTO;
 

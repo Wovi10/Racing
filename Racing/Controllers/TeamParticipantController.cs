@@ -1,10 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Racing.BLL.Services.Interface;
-using Racing.DAL.Models;
 using Racing.DTO.CreateDTO;
-using Racing.DTO.ReadDTO;
 using Racing.DTO.UpdateDTO;
 
 namespace Racing.API.Controllers
