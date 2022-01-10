@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "OvfnpvIWtSeQFhmzRo6+y/4hPDFhLYY8MqQZsQEMbL04HONe2w/3n4KtG4cPCBUBSfIhXIrrqSsGNNrt06FvVA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\woutv\\OneDrive - AP Hogeschool Antwerpen\\Bureaublad\\School\\3TI\\ProgrammerenDotNET\\Project\\Racing\\Racing.DTO\\Racing.DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\woutv\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.2.0\\microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.aspnetcore.localization\\2.2.0\\microsoft.aspnetcore.localization.2.2.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.extensions.localization\\6.0.1\\microsoft.extensions.localization.6.0.1.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\6.0.1\\microsoft.extensions.localization.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\woutv\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

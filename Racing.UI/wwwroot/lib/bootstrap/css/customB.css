@@ -1,0 +1,42 @@
+﻿/* Navbar start */
+#offcanvasNavbar {
+    width: 300px !important;
+}
+.navbar-toggler {
+    border-color: transparent !important;
+}
+/* Navbar end */
+
+/* Main background */
+.main-background {
+    background-color: #fff;
+}
+
+/* Buttons start */
+.primary-button {
+    background-color: #97000c;
+    border-color: #97000c;
+    /* background-color: #535bb3; */
+    color: #fff;
+}
+.primary-button:hover {
+    background-color: #710009;
+    border-color: #710009;
+    /* background-color: #393f81; */
+    color: #fff;
+}
+/* Buttons end */
+
+
+/* Start login form css*/
+.no-underlined {
+    text-decoration: none !important;
+    color: #97000c;
+    /* color: #535bb3; */
+}
+.no-underlined:hover {
+    color: #710009;
+    /* color: #393f81; */
+}
+/* End login form css*/
+

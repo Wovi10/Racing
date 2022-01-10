@@ -1,0 +1,100 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Racing.UI.Pages.Pilot.CreateModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a Pilot:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Enter a license number:
+            </label>
+            <input asp-for="Pilot.LicensNr" class="form-control"/>
+            <span asp-validation-for="Pilot.LicensNr" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Name:
+            </label>
+            <input asp-for="Pilot.Name" class="form-control"/>
+            <span asp-validation-for="Pilot.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                FirstName:
+            </label>
+            <input asp-for="Pilot.FirstName" class="form-control"/>
+            <span asp-validation-for="Pilot.FirstName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                NickName:
+            </label>
+            <input asp-for="Pilot.NickName" class="form-control"/>
+            <span asp-validation-for="Pilot.NickName" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                PhotoPath:
+            </label>
+            <input asp-for="Pilot.PhotoPath" type="file" class="form-control"/>
+            <span asp-validation-for="Pilot.PhotoPath" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Gender:
+            </label>
+            <select asp-for="Pilot.Gender" class="form-control">
+                <option selected>Choose...</option>
+                <option value="M">M</option>
+                <option value="V">V</option>
+            </select>
+            <span asp-validation-for="Pilot.Gender" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label date">
+                Birthdate:
+            </label>
+            <input asp-for="Pilot.Birthdate" type="date" class="form-control"/>
+            <span asp-validation-for="Pilot.Birthdate" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Length:
+            </label>
+            <input asp-for="Pilot.Length" class="form-control"/>
+            <span asp-validation-for="Pilot.Length" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Weight:
+            </label>
+            <input asp-for="Pilot.Weight" class="form-control"/>
+            <span asp-validation-for="Pilot.Weight" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>
+
+<div class="col-md-6 col-lg-3">
+    <div class="card my-3 shadow bg-white border-0" style="border-radius: 1rem;">
+        <div class="card-body">
+            <h3 class="card-title">
+                <a class="text-dark" href="javascript:history.go(-1)">Back</a>
+            </h3>
+        </div>
+    </div>
+</div>

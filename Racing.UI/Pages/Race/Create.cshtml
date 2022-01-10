@@ -1,0 +1,60 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Racing.UI.Pages.Race.CreateModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a Race:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Name:
+            </label>
+            <input asp-for="Race.Name" class="form-control"/>
+            <span asp-validation-for="Race.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                StartDate:
+            </label>
+            <input asp-for="Race.StartDate" type="date" class="form-control"/>
+            <span asp-validation-for="Race.StartDate" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                EndDate:
+            </label>
+            <input asp-for="Race.EndDate" type="date" class="form-control"/>
+            <span asp-validation-for="Race.EndDate" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Season:
+            </label>
+            <select asp-for="Race.SeasonId" asp-items="Model.SeasonList" class="form-control">
+                <option value="">--- Select season ---</option>
+            </select>
+            <span asp-validation-for="Race.SeasonId" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Circuit:
+            </label>
+            <select asp-for="Race.CircuitId" asp-items="Model.CircuitList" class="form-control">
+                <option value="">--- Select circuit ---</option>
+            </select>
+            <span asp-validation-for="Race.CircuitId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>

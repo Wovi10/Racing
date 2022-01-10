@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - Racing</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/css/customB.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body class="main-background">
+<!-- Navbar -->
+<header>
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler mr-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto text-uppercase fw-bold" asp-area="" asp-page="/Index">Racing</a>
+
+            <div class="offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-uppercase fw-bold" id="offcanvasNavbarLabel">Racing</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" asp-area="" asp-page="/Index">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Pilot/Index">Pilots</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<div class="container-fluid">
+    <main role="main" class="p-4 mb-5">
+        @RenderBody()
+
+    </main>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+
+@RenderSection("Scripts", required: false)
+</body>
+</html>

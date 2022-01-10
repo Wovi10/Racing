@@ -1,0 +1,35 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Racing.UI.Pages.Team.EditModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a Team:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Name:
+            </label>
+            <input asp-for="Team.Name" class="form-control" value="@Model.Team.Name"/>
+            <span asp-validation-for="Team.Name" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>
+
+<div class="col-md-6 col-lg-3">
+    <div class="card my-3 shadow bg-white border-0" style="border-radius: 1rem;">
+        <div class="card-body">
+            <h3 class="card-title">
+                <a class="text-dark" href="javascript:history.go(-1)">Back</a>
+            </h3>
+        </div>
+    </div>
+</div>

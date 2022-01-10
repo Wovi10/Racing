@@ -1,0 +1,45 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Racing.UI.Pages.TeamParticipant.CreateModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a TeamParticipant:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Pilot:
+            </label>
+            <select asp-for="Tp.PilotId" asp-items="Model.PilotList" class="form-control">
+                <option value="">--- Select pilot ---</option>
+            </select>
+            <span asp-validation-for="Tp.PilotId" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Team:
+            </label>
+            <select asp-for="Tp.TeamId" asp-items="Model.TeamList" class="form-control">
+                <option value="">--- Select team ---</option>
+            </select>
+            <span asp-validation-for="Tp.TeamId" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Race:
+            </label>
+            <select asp-for="Tp.RaceId" asp-items="Model.RaceList" class="form-control">
+                <option value="">--- Select race ---</option>
+            </select>
+            <span asp-validation-for="Tp.RaceId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>

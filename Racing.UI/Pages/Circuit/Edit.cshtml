@@ -1,0 +1,76 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using Racing.DTO.ReadDTO
+@model Racing.UI.Pages.Circuit.EditModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a Circuit:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Name:
+            </label>
+            <input asp-for="Circuit.Name" class="form-control" value="@Model.Circuit.Name"/>
+            <span asp-validation-for="Circuit.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Length:
+            </label>
+            <input asp-for="Circuit.Length" class="form-control" value="@Model.Circuit.Length"/>
+            <span asp-validation-for="Circuit.Length" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Country:
+            </label>
+            <select asp-for="Circuit.CountryId" asp-items="Model.CountryList" class="form-control">
+                <option value="">--- Select country ---</option>
+            </select>
+            <span asp-validation-for="Circuit.CountryId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                State:
+            </label>
+            <input asp-for="Circuit.State" class="form-control" value="@Model.Circuit.State"/>
+            <span asp-validation-for="Circuit.State" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Street:
+            </label>
+            <input asp-for="Circuit.Street" class="form-control" value="@Model.Circuit.Street"/>
+            <span asp-validation-for="Circuit.Street" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Number:
+            </label>
+            <input asp-for="Circuit.Number" class="form-control" value="@Model.Circuit.Number"/>
+            <span asp-validation-for="Circuit.Number" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>
+
+<div class="col-md-6 col-lg-3">
+    <div class="card my-3 shadow bg-white border-0" style="border-radius: 1rem;">
+        <div class="card-body">
+            <h3 class="card-title">
+                <a class="text-dark" href="javascript:history.go(-1)">Back</a>
+            </h3>
+        </div>
+    </div>
+</div>

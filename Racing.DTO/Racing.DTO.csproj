@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\CreateDTOMessages.resx">
+      <DependentUpon>CreateDTOMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\CreateDTOMessages.en.resx">
+      <DependentUpon>CreateDTOMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\CreateDTOMessages.nl.resx">
+      <DependentUpon>CreateDTOMessage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

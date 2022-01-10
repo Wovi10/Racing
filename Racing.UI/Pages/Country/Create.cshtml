@@ -1,0 +1,24 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Racing.UI.Pages.Country.CreateModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a Country:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Name:
+            </label>
+            <input asp-for="Country.Name" class="form-control"/>
+            <span asp-validation-for="Country.Name" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>

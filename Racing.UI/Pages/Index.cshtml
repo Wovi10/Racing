@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section class="py-4 my-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-6 mb-3">All links</h1>
+                <hr class="my-4">
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card my-3 shadow bg-white border-0" style="border-radius: 1rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Implemented pages</h3>
+                        <ul>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Country/Index">Country</a>
+                            </li>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Pilot/Index">Pilots</a>
+                            </li>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Series/Index">Series</a>
+                            </li>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Team/Index">Teams</a>
+                            </li>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Circuit/Index">Circuits</a>
+                            </li>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Season/Index">Season</a>
+                            </li>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Race/Index">Races</a>
+                            </li>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/TeamParticipant/Index">TeamParticipants</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card my-3 shadow bg-white border-0" style="border-radius: 1rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Testing pages</h3>
+                        <ul>
+                            <li>
+                                <a class="text-dark" asp-area="" asp-page="/Login/Index">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

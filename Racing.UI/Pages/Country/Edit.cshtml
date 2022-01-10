@@ -1,0 +1,25 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.Taghelpers
+@model Racing.UI.Pages.Country.EditModel
+@{
+}
+
+<br/>
+<br/>
+<br/>
+
+<form class="w-50 mx-auto" method="post">
+    <p>Edit country:</p>
+    <div class="form-group row">
+        <div class="w-75">
+            <label for="Name">Name: </label>
+            <input class="form-control" asp-for="Country.Name" value="@Model.Country.Name"/>
+            <span asp-validation-for="Country.Name" class="text-danger"></span>
+        </div>
+        <div class="w-25">
+            <label for="Submit">&nbsp; </label>
+            <input asp-for="Country.Id" value="@Model.Country.Id" hidden/>
+            <input class="form-control" type="submit" value="Update"/>
+        </div>
+    </div>
+</form>

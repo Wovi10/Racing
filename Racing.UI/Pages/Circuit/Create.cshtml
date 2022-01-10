@@ -1,0 +1,65 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Racing.UI.Pages.Circuit.CreateModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a Circuit:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Name:
+            </label>
+            <input asp-for="circuit.Name" class="form-control"/>
+            <span asp-validation-for="circuit.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Length:
+            </label>
+            <input asp-for="circuit.Length" class="form-control"/>
+            <span asp-validation-for="circuit.Length" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Country:
+            </label>
+            <select asp-for="circuit.CountryId" asp-items="Model.CountryList" class="form-control">
+                <option value="">--- Select country ---</option>
+            </select>
+            <span asp-validation-for="circuit.CountryId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                State:
+            </label>
+            <input asp-for="circuit.State" class="form-control"/>
+            <span asp-validation-for="circuit.State" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Street:
+            </label>
+            <input asp-for="circuit.Street" class="form-control"/>
+            <span asp-validation-for="circuit.Street" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Number:
+            </label>
+            <input asp-for="circuit.Number" class="form-control">
+            <span asp-validation-for="circuit.Number" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>

@@ -1,0 +1,51 @@
+﻿@page
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@model Racing.UI.Pages.Season.CreateModel
+@{
+}
+
+<br/><br/><br/>
+
+<p>Enter a Season:</p>
+
+<form method="post">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Name:
+            </label>
+            <input asp-for="Season.Name" class="form-control"/>
+            <span asp-validation-for="Season.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                StartDate:
+            </label>
+            <input asp-for="Season.StartDate" type="date" class="form-control"/>
+            <span asp-validation-for="Season.StartDate" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                EndDate:
+            </label>
+            <input asp-for="Season.EndDate" type="date" class="form-control"/>
+            <span asp-validation-for="Season.EndDate" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label class="form-label">
+                Series:
+            </label>
+            <select asp-for="Season.SeriesId" asp-items="Model.SeriesList" class="form-control">
+                <option value="">--- Select series ---</option>
+            </select>
+            <span asp-validation-for="Season.SeriesId" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="col-auto my-1">
+        <input type="submit" class="btn btn-primary"/>
+    </div>
+</form>
