@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Racing.DTO.ReadDTO
+﻿namespace Racing.DTO.ReadDTO
 {
     public class CircuitDTO
     {
