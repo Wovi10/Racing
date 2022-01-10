@@ -1,6 +1,4 @@
-﻿using Racing.DTO.CreateDTO;
-
-namespace Racing.DTO.UpdateDTO
+﻿namespace Racing.DTO.UpdateDTO
 {
     public class TeamParticipantsUpdateDTO
     {

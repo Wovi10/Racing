@@ -1,5 +1,4 @@
 ﻿using System;
-using Racing.DTO.CreateDTO;
 
 namespace Racing.DTO.UpdateDTO
 {
