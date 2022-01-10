@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using Racing.DAL.Models;
-using Racing.DTO;
 using Racing.DTO.CreateDTO;
 using Racing.DTO.ReadDTO;
 using Racing.DTO.UpdateDTO;

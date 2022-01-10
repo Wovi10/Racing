@@ -1,7 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System.Reflection;
+using Microsoft.Extensions.DependencyInjection;
 using Racing.BLL.Services;
 using Racing.BLL.Services.Interface;
-using System.Reflection;
 
 namespace Racing.BLL
 {
