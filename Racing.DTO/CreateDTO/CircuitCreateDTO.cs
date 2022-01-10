@@ -1,6 +1,4 @@
-﻿using Racing.DTO.ReadDTO;
-
-namespace Racing.DTO.CreateDTO
+﻿namespace Racing.DTO.CreateDTO
 {
     public class CircuitCreateDTO
     {

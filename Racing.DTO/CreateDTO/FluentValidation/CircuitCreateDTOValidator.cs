@@ -2,7 +2,6 @@
 using Microsoft.Extensions.Localization;
 using Racing.DTO.Resources;
 
-
 namespace Racing.DTO.CreateDTO.FluentValidation
 {
     public class CircuitCreateDTOValidator : AbstractValidator<CircuitCreateDTO>
