@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.BLL\\Racing.BLL.csproj": {}
+    "D:\\Github\\Racing\\Racing.BLL\\Racing.BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.BLL\\Racing.BLL.csproj": {
+    "D:\\Github\\Racing\\Racing.BLL\\Racing.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.BLL\\Racing.BLL.csproj",
+        "projectUniqueName": "D:\\Github\\Racing\\Racing.BLL\\Racing.BLL.csproj",
         "projectName": "Racing.BLL",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.BLL\\Racing.BLL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.BLL\\obj\\",
+        "projectPath": "D:\\Github\\Racing\\Racing.BLL\\Racing.BLL.csproj",
+        "packagesPath": "C:\\Users\\woutv\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\Racing\\Racing.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\woutv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,11 +32,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DAL\\Racing.DAL.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DAL\\Racing.DAL.csproj"
+              "D:\\Github\\Racing\\Racing.DAL\\Racing.DAL.csproj": {
+                "projectPath": "D:\\Github\\Racing\\Racing.DAL\\Racing.DAL.csproj"
               },
-              "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\Racing.DTO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\Racing.DTO.csproj"
+              "D:\\Github\\Racing\\Racing.DTO\\Racing.DTO.csproj": {
+                "projectPath": "D:\\Github\\Racing\\Racing.DTO\\Racing.DTO.csproj"
               }
             }
           }
@@ -74,24 +75,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DAL\\Racing.DAL.csproj": {
+    "D:\\Github\\Racing\\Racing.DAL\\Racing.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DAL\\Racing.DAL.csproj",
+        "projectUniqueName": "D:\\Github\\Racing\\Racing.DAL\\Racing.DAL.csproj",
         "projectName": "Racing.DAL",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DAL\\Racing.DAL.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DAL\\obj\\",
+        "projectPath": "D:\\Github\\Racing\\Racing.DAL\\Racing.DAL.csproj",
+        "packagesPath": "C:\\Users\\woutv\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\Racing\\Racing.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\woutv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,8 +107,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\Racing.DTO.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\Racing.DTO.csproj"
+              "D:\\Github\\Racing\\Racing.DTO\\Racing.DTO.csproj": {
+                "projectPath": "D:\\Github\\Racing\\Racing.DTO\\Racing.DTO.csproj"
               }
             }
           }
@@ -147,24 +149,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\Racing.DTO.csproj": {
+    "D:\\Github\\Racing\\Racing.DTO\\Racing.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\Racing.DTO.csproj",
+        "projectUniqueName": "D:\\Github\\Racing\\Racing.DTO\\Racing.DTO.csproj",
         "projectName": "Racing.DTO",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\Racing.DTO.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Racing\\Racing.DTO\\obj\\",
+        "projectPath": "D:\\Github\\Racing\\Racing.DTO\\Racing.DTO.csproj",
+        "packagesPath": "C:\\Users\\woutv\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\Racing\\Racing.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\woutv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -218,7 +221,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
