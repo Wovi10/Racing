@@ -81,4 +81,7 @@
     <data name="race" xml:space="preserve">
         <value>Duid een race aan aub!</value>
     </data>
+    <data name="wrongdate" xml:space="preserve">
+        <value>Startdatum moet voor einddatum liggen!</value>
+    </data>
 </root>

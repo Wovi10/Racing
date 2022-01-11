@@ -81,4 +81,7 @@
     <data name="race" xml:space="preserve">
         <value>Please select a race!</value>
     </data>
+    <data name="wrongdate" xml:space="preserve">
+        <value>Startdate must be smaller than or equal to enddate!</value>
+    </data>
 </root>
