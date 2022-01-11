@@ -38,6 +38,8 @@ namespace Racing.UI.Pages.Season
         // public int CircuitId { get; set; }
         // public DateTime StartDate { get; set; }
         // public DateTime EndDate { get; set; }
+        public string startdateStr { get; set; }
+        public string enddateStr { get; set; }
         public SelectList SeriesList { get; set; }
 
         [BindProperty] 
@@ -52,6 +54,8 @@ namespace Racing.UI.Pages.Season
             responseString = await response.Content.ReadAsStringAsync();
             Season = JsonSerializer.Deserialize<SeasonUpdateDTO>(responseString, _options);
 
+            SetDatesForUI();
+            
             return Page();
         }
 
@@ -74,7 +78,11 @@ namespace Racing.UI.Pages.Season
 
             return Series;
         }
-
+        private void SetDatesForUI()
+        {
+            startdateStr = Season.StartDate.ToString("yyyy-MM-dd");
+            enddateStr = Season.EndDate.ToString("yyyy-MM-dd");
+        }
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

@@ -30,7 +30,8 @@ namespace Racing.UI.Pages.Series
         // public DateTime StartDate { get; set; }
         // public DateTime EndDate { get; set; }
         // public bool Active { get; set; }
-
+        public string startdateStr { get; set; }
+        public string enddateStr { get; set; }
         [BindProperty] public SeriesUpdateDTO Series { get; set; }
 
         public async Task<IActionResult> OnGetAsync(long id)
@@ -39,9 +40,17 @@ namespace Racing.UI.Pages.Series
             responseString = await response.Content.ReadAsStringAsync();
             Series = JsonSerializer.Deserialize<SeriesUpdateDTO>(responseString, _options);
 
+            SetDatesForUI();
+            
             return Page();
         }
 
+        private void SetDatesForUI()
+        {
+            startdateStr = Series.StartDate.ToString("yyyy-MM-dd");
+            enddateStr = Series.EndDate.ToString("yyyy-MM-dd");
+        }
+        
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)

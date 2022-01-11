@@ -28,7 +28,7 @@
             <label class="form-label">
                 EndDate:
             </label>
-            <input asp-for="Race.EndDate" type="date" class="form-control" value="@Model.Race.EndDate.ToShortDateString()"/>
+            <input asp-for="Race.EndDate" type="date" class="form-control" value="@Model.enddateStr"/>
             <span asp-validation-for="Race.EndDate" class="text-danger"></span>
         </div>
     </div>
