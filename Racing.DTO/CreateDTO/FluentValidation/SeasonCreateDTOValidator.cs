@@ -18,6 +18,7 @@ namespace Racing.DTO.CreateDTO.FluentValidation
 
             RuleFor(season => season.StartDate)
                 .NotEmpty()
+                .LessThanOrEqualTo(season => season.EndDate)
                 .WithMessage(localizer.GetString("startdate"));
 
             RuleFor(season => season.EndDate)
