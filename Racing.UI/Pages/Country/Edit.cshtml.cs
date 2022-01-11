@@ -1,3 +1,4 @@
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
@@ -46,7 +47,6 @@ namespace Racing.UI.Pages.Country
             string requestRe = await response.Content.ReadAsStringAsync();
 
             responseString = requestRe;
-
             return Redirect("../country");
         }
     }

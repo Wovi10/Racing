@@ -37,6 +37,7 @@ namespace Racing.UI.Pages.Race
         // public int CircuitId { get; set; }
         // public DateTime StartDate { get; set; }
         // public DateTime EndDate { get; set; }
+        public string startdateStr { get; set; }
         public SelectList SeasonList { get; set; }
         public SelectList CircuitList { get; set; }
 
@@ -52,7 +53,8 @@ namespace Racing.UI.Pages.Race
             HttpResponseMessage response = await _client.GetAsync(raceURL + "?id=" + id);
             responseString = await response.Content.ReadAsStringAsync();
             Race = JsonSerializer.Deserialize<RaceUpdateDTO>(responseString, _options);
-
+            startdateStr = Race.StartDate.ToString("yyyy-MM-dd");
+            
             return Page();
         }
 

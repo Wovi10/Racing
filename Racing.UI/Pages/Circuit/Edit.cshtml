@@ -61,7 +61,8 @@
     </div>
 
     <div class="col-auto my-1">
-        <input type="submit" class="btn btn-primary"/>
+        <input asp-for="Circuit.Id" value="@Model.Circuit.Id" hidden/>
+        <input class="btn btn-primary" type="submit" value="Update"/>
     </div>
 </form>
 

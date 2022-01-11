@@ -42,10 +42,10 @@
                             @item.Name
                         </td>
                         <td>
-                            @item.StartDate
+                            @item.StartDate.ToShortDateString()
                         </td>
                         <td>
-                            @item.EndDate
+                            @item.EndDate.ToShortDateString()
                         </td>
                         <td>
                             @Model.GetSeriesName(@item.SeriesId).Result
