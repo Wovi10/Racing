@@ -8,19 +8,23 @@ namespace Racing.DTO.CreateDTO.FluentValidation
     {
         public SeriesCreateDTOValidator(IStringLocalizer<CreateDTOMessages> localizer)
         {
-            RuleFor(season => season.Name)
+            RuleFor(series => series.Name)
                 .NotEmpty()
                 .WithMessage(localizer.GetString("name"));
             
-            RuleFor(season => season.SortingOrder)
+            RuleFor(series => series.SortingOrder)
                 .NotEmpty()
                 .WithMessage(localizer.GetString("sortingorder"));
 
-            RuleFor(season => season.StartDate)
+            RuleFor(series => series.StartDate)
                 .NotEmpty()
                 .WithMessage(localizer.GetString("startdate"));
 
-            RuleFor(season => season.EndDate)
+            RuleFor(series => series.StartDate)
+                .LessThanOrEqualTo(series => series.EndDate)
+                .WithMessage(localizer.GetString("wrongdate"));
+            
+            RuleFor(series => series.EndDate)
                 .NotEmpty()
                 .WithMessage(localizer.GetString("enddate"));
         }

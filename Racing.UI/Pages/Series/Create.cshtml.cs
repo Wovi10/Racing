@@ -22,12 +22,6 @@ namespace Racing.UI.Pages.Series
             _client = client;
             _options = options;
         }
-
-        // public string Name { get; set; }
-        // public int SortingOrder { get; set; }
-        // public string StartDate { get; set; }
-        // public string EndDate { get; set; }
-        // public bool Active { get; set; }
         
         [BindProperty]
         public SeriesCreateDTO Series { get; set; }
@@ -43,13 +37,7 @@ namespace Racing.UI.Pages.Series
             {
                 return Page();
             }
-            // SeriesCreateDTO seriesCreateDTO = new SeriesCreateDTO()
-            // {
-            //     Name = Request.Form[nameof(Name)],
-            //     StartDate = DateTime.Parse(Request.Form[nameof(StartDate)]),
-            //     EndDate = DateTime.Parse(Request.Form[nameof(EndDate)]),
-            //     SortingOrder = int.Parse(Request.Form[nameof(SortingOrder)])
-            // };
+            
             Series.Active = IsSeasonActive(Series);
             string jsonString = JsonSerializer.Serialize(Series);
             var stringContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
