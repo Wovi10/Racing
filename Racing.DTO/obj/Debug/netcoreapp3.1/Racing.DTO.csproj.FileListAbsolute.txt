@@ -38,3 +38,23 @@ C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\Programm
 C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\ProgrammerenDotNET\Project\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\en\Racing.DTO.resources.dll
 C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\ProgrammerenDotNET\Project\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\nl\Racing.DTO.resources.cs
 C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\ProgrammerenDotNET\Project\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\nl\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\bin\Debug\netcoreapp3.1\Racing.DTO.deps.json
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\bin\Debug\netcoreapp3.1\Racing.DTO.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\bin\Debug\netcoreapp3.1\Racing.DTO.pdb
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\bin\Debug\netcoreapp3.1\en\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\bin\Debug\netcoreapp3.1\nl\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.Resources.CreateDTOMessages.resources
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.Resources.CreateDTOMessages.en.resources
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.Resources.CreateDTOMessages.nl.resources
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\en\Racing.DTO.resources.cs
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\en\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\nl\Racing.DTO.resources.cs
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\nl\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.DTO\obj\Debug\netcoreapp3.1\Racing.DTO.pdb

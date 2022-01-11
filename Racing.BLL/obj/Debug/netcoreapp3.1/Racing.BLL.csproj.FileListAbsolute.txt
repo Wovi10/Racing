@@ -48,3 +48,20 @@ C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\Programm
 C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\ProgrammerenDotNET\Project\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.pdb
 C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\ProgrammerenDotNET\Project\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\en\Racing.DTO.resources.dll
 C:\Users\Admin\OneDrive - AP Hogeschool Antwerpen\Bureaublad\School\3TI\ProgrammerenDotNET\Project\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\nl\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\Racing.BLL.deps.json
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\Racing.BLL.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\Racing.BLL.pdb
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\Racing.DAL.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\Racing.DTO.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\Racing.DAL.pdb
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\Racing.DTO.pdb
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\en\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\bin\Debug\netcoreapp3.1\nl\Racing.DTO.resources.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.dll
+C:\Users\Admin\Documents\GitHub\Racing\Racing.BLL\obj\Debug\netcoreapp3.1\Racing.BLL.pdb
