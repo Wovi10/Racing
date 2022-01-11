@@ -24,13 +24,13 @@ namespace Racing.DTO.UpdateDTO.FluentValidation
                 .NotEmpty()
                 .WithMessage(localizer.GetString("startdate"));
 
-            RuleFor(race => race.StartDate)
-                .LessThanOrEqualTo(race => race.EndDate)
-                .WithMessage(localizer.GetString("wrongdate"));
-
             RuleFor(race => race.EndDate)
                 .NotEmpty()
                 .WithMessage(localizer.GetString("enddate"));
+
+            RuleFor(race => race.StartDate)
+                .LessThanOrEqualTo(race => race.EndDate)
+                .WithMessage(localizer.GetString("wrongdate"));
         }
     }
 }
