@@ -35,12 +35,14 @@ namespace Racing.DTO.UpdateDTO.FluentValidation
             
             // Value rules
             RuleFor(pilot => pilot.LicensNr)
-                .Matches("^[0-9A-F]12$")
-                .WithMessage(localizer.GetString("licensenrForm"));
-            
+                .Matches("^[0-9A-F]+$")
+                .WithMessage(localizer.GetString("licensenrForm"))
+                .Length(12)
+                .WithMessage(localizer.GetString("licensenrLength"));
+
             RuleFor(pilot => pilot.Length)
                 .LessThanOrEqualTo(200)
-                .GreaterThanOrEqualTo(100)
+                .When(pilot => !string.IsNullOrEmpty(pilot.Length.ToString()))
                 .WithMessage(localizer.GetString("length"));
         }
     }
