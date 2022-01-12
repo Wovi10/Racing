@@ -22,7 +22,7 @@
         <value>Moet een naam bevatten!</value>
     </data>
     <data name="length" xml:space="preserve">
-        <value>Moet een lengte bevatten!</value>
+        <value>Lengte moet kleiner zijn dan 200cm!</value>
     </data>
     <data name="country" xml:space="preserve">
         <value>Duid een land aan aub!</value>
@@ -83,5 +83,11 @@
     </data>
     <data name="wrongdate" xml:space="preserve">
         <value>Startdatum moet voor einddatum liggen!</value>
+    </data>
+    <data name="licensenrForm" xml:space="preserve">
+        <value>(12 hexadecimale chars: 0-9 of A-F)</value>
+    </data>
+    <data name="licensnr" xml:space="preserve">
+        <value>Moet een licentienummer bevatten!</value>
     </data>
 </root>

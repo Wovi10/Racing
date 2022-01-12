@@ -8,25 +8,10 @@ namespace Racing.DTO.UpdateDTO.FluentValidation
     {
         public PilotUpdateDTOValidator(IStringLocalizer<CreateDTOMessages> localizer)
         {
+            // Required fields
             RuleFor(pilot => pilot.Name)
                 .NotEmpty()
                 .WithMessage(localizer.GetString("name"));
-            
-            RuleFor(pilot => pilot.FirstName)
-                .NotEmpty()
-                .WithMessage(localizer.GetString("firstname"));
-            
-            RuleFor(pilot => pilot.NickName)
-                .NotEmpty()
-                .WithMessage(localizer.GetString("nickname"));
-            
-            RuleFor(pilot => pilot.Length)
-                .NotEmpty()
-                .WithMessage(localizer.GetString("length"));
-
-            RuleFor(pilot => pilot.Weight)
-                .NotEmpty()
-                .WithMessage(localizer.GetString("weight"));
 
             RuleFor(pilot => pilot.Birthdate)
                 .NotEmpty()
@@ -35,10 +20,28 @@ namespace Racing.DTO.UpdateDTO.FluentValidation
             RuleFor(pilot => pilot.Gender)
                 .NotEmpty()
                 .WithMessage(localizer.GetString("gender"));
-            
-            RuleFor(pilot => pilot.PhotoPath)
+
+            RuleFor(pilot => pilot.FirstName)
                 .NotEmpty()
-                .WithMessage(localizer.GetString("photopath"));
+                .WithMessage(localizer.GetString("firstname"));
+            
+            RuleFor(pilot => pilot.NickName)
+                .NotEmpty()
+                .WithMessage(localizer.GetString("nickname"));
+            
+            RuleFor(pilot => pilot.LicensNr)
+                .NotEmpty()
+                .WithMessage(localizer.GetString("licensenr"));
+            
+            // Value rules
+            RuleFor(pilot => pilot.LicensNr)
+                .Matches("^[0-9A-F]12$")
+                .WithMessage(localizer.GetString("licensenrForm"));
+            
+            RuleFor(pilot => pilot.Length)
+                .LessThanOrEqualTo(200)
+                .GreaterThanOrEqualTo(100)
+                .WithMessage(localizer.GetString("length"));
         }
     }
 }

@@ -22,7 +22,7 @@
         <value>Must contain a name!</value>
     </data>
     <data name="length" xml:space="preserve">
-        <value>Must contain a length!</value>
+        <value>Length must be smaller than 200cm!</value>
     </data>
     <data name="country" xml:space="preserve">
         <value>Please select a country!</value>
@@ -83,5 +83,11 @@
     </data>
     <data name="wrongdate" xml:space="preserve">
         <value>Startdate must be smaller than or equal to enddate!</value>
+    </data>
+    <data name="licensnr" xml:space="preserve">
+        <value>Must contain a license number!</value>
+    </data>
+    <data name="licensenrForm" xml:space="preserve">
+        <value>(12 hexadecimal chars: 0-9 or A-F)</value>
     </data>
 </root>
