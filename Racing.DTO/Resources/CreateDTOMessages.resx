@@ -81,6 +81,9 @@
         <value>Must contain a license number!</value>
     </data>
     <data name="licensenrForm" xml:space="preserve">
-        <value>(12 hexadecimal chars: 0-9 or A-F)</value>
+        <value>Only 0-9 and A-F are allowed!</value>
+    </data>
+    <data name="licensenrLength" xml:space="preserve">
+        <value>Must be exactly 12 chars long!</value>
     </data>
 </root>

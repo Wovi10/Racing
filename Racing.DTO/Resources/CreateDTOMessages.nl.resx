@@ -85,9 +85,12 @@
         <value>Startdatum moet voor einddatum liggen!</value>
     </data>
     <data name="licensenrForm" xml:space="preserve">
-        <value>(12 hexadecimale chars: 0-9 of A-F)</value>
+        <value>Enkel 0-9 en A-F zijzn toegelaten!</value>
     </data>
     <data name="licensnr" xml:space="preserve">
         <value>Moet een licentienummer bevatten!</value>
+    </data>
+    <data name="licensenrLength" xml:space="preserve">
+        <value>Moet exact 12 tekens lang zijn</value>
     </data>
 </root>
