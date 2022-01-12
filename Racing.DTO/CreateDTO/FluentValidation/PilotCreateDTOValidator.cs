@@ -37,10 +37,10 @@ namespace Racing.DTO.CreateDTO.FluentValidation
             RuleFor(pilot => pilot.LicensNr)
                 .Matches("^[0-9A-F]12$")
                 .WithMessage(localizer.GetString("licensenrForm"));
-            
+
             RuleFor(pilot => pilot.Length)
-                .LessThanOrEqualTo(200)
-                .GreaterThanOrEqualTo(100)
+                .LessThanOrEqualTo(200).Empty()
+                .When(pilot => pilot.Length != 0)
                 .WithMessage(localizer.GetString("length"));
         }
     }
