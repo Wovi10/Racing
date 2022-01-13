@@ -15,31 +15,26 @@ namespace Racing.UI.Pages.TeamParticipant
 {
     public class EditModel : PageModel
     {
-        private HttpClient _client;
+        private readonly HttpClient _client;
         private readonly JsonSerializerOptions _options;
-        public string responseString;
+        private string _responseString;
         
         private static string basicURL = "https://localhost:44397/api/";
-        private string tpURL = basicURL + "TeamParticipant";
-        private string teamURL = basicURL + "Team";
-        private string raceURL = basicURL + "Race";
-        private string pilotURL = basicURL + "Pilot";
-        
-        public List<TeamDTO> Teams = new List<TeamDTO>();
-        public List<RaceDTO> Races = new List<RaceDTO>();
-        public List<PilotDTO> Pilots = new List<PilotDTO>();
+        private readonly string tpURL = basicURL + "TeamParticipant";
+        private readonly string teamURL = basicURL + "Team";
+        private readonly string raceURL = basicURL + "Race";
+        private readonly string pilotURL = basicURL + "Pilot";
+
+        private List<TeamDTO> Teams = new List<TeamDTO>();
+        private List<RaceDTO> Races = new List<RaceDTO>();
+        private List<PilotDTO> Pilots = new List<PilotDTO>();
 
         public EditModel(HttpClient client, JsonSerializerOptions options)
         {
             _client = client;
             _options = options;
         }
-
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public int TeamId { get; set; }
-        public int RaceId { get; set; }
-        public int PilotId { get; set; }
+        
         public SelectList TeamList { get; set; }
         public SelectList RaceList { get; set; }
         public SelectList PilotList { get; set; }
@@ -57,8 +52,8 @@ namespace Racing.UI.Pages.TeamParticipant
             RaceList = new SelectList(Races, nameof(DAL.Models.Race.Id), nameof(DAL.Models.Race.Name));
 
             HttpResponseMessage response = await _client.GetAsync(tpURL + "?id=" + id);
-            responseString = await response.Content.ReadAsStringAsync();
-            Tp = JsonSerializer.Deserialize<TeamParticipantsUpdateDTO>(responseString, _options);
+            _responseString = await response.Content.ReadAsStringAsync();
+            Tp = JsonSerializer.Deserialize<TeamParticipantsUpdateDTO>(_responseString, _options);
 
             return Page();
         }
@@ -66,8 +61,8 @@ namespace Racing.UI.Pages.TeamParticipant
         public async Task<List<TeamDTO>> GetTeams()
         {
             HttpResponseMessage response = await _client.GetAsync(teamURL + "?items_per_page=50&page=0");
-            responseString = await response.Content.ReadAsStringAsync();
-            var teamList = JsonConvert.DeserializeObject<List<TeamDTO>>(responseString);
+            _responseString = await response.Content.ReadAsStringAsync();
+            var teamList = JsonConvert.DeserializeObject<List<TeamDTO>>(_responseString);
 
 
             foreach (TeamDTO team in teamList)
@@ -86,8 +81,8 @@ namespace Racing.UI.Pages.TeamParticipant
         public async Task<List<RaceDTO>> GetRaces()
         {
             HttpResponseMessage response = await _client.GetAsync(raceURL + "?items_per_page=50&page=0");
-            responseString = await response.Content.ReadAsStringAsync();
-            var raceList = JsonConvert.DeserializeObject<List<RaceDTO>>(responseString);
+            _responseString = await response.Content.ReadAsStringAsync();
+            var raceList = JsonConvert.DeserializeObject<List<RaceDTO>>(_responseString);
 
 
             foreach (RaceDTO race in raceList)
@@ -106,8 +101,8 @@ namespace Racing.UI.Pages.TeamParticipant
         public async Task<List<PilotDTO>> GetPilots()
         {
             HttpResponseMessage response = await _client.GetAsync(pilotURL + "?items_per_page=50&page=0");
-            responseString = await response.Content.ReadAsStringAsync();
-            var pilotList = JsonConvert.DeserializeObject<List<PilotDTO>>(responseString);
+            _responseString = await response.Content.ReadAsStringAsync();
+            var pilotList = JsonConvert.DeserializeObject<List<PilotDTO>>(_responseString);
 
 
             foreach (PilotDTO pilot in pilotList)
@@ -136,7 +131,7 @@ namespace Racing.UI.Pages.TeamParticipant
             HttpResponseMessage response = await _client.PutAsync(tpURL, stringContent);
             string requestRe = await response.Content.ReadAsStringAsync();
 
-            responseString = requestRe;
+            _responseString = requestRe;
 
             return Redirect("../teamparticipant");
         }

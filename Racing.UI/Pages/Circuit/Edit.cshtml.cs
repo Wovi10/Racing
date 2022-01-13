@@ -18,7 +18,8 @@ namespace Racing.UI.Pages.Circuit
         private HttpClient _client;
         private readonly JsonSerializerOptions _options;
         public string responseString;
-        private string basicURL = "https://localhost:44397/api/Circuit";
+        private static string basicURL = "https://localhost:44397/api/";
+        private string circuitURL = basicURL + "Circuit";
         private string countryURL = "https://localhost:44397/api/Country";
         public List<CountryDTO> Countries = new List<CountryDTO>();
 
@@ -44,7 +45,8 @@ namespace Racing.UI.Pages.Circuit
         {
             Countries = await GetCountries();
             CountryList = new SelectList(Countries, nameof(DAL.Models.Country.Id), nameof(DAL.Models.Country.Name));
-            HttpResponseMessage response = await _client.GetAsync(basicURL + "?id=" + id);
+            
+            HttpResponseMessage response = await _client.GetAsync(circuitURL + "?id=" + id);
             responseString = await response.Content.ReadAsStringAsync();
             Circuit = JsonSerializer.Deserialize<CircuitUpdateDTO>(responseString, _options);
 
@@ -87,7 +89,7 @@ namespace Racing.UI.Pages.Circuit
             string jsonString = JsonSerializer.Serialize(Circuit);
             var stringContent = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await _client.PutAsync(basicURL, stringContent);
+            HttpResponseMessage response = await _client.PutAsync(circuitURL, stringContent);
             string requestRe = await response.Content.ReadAsStringAsync();
 
             responseString = requestRe;
